@@ -11,4 +11,5 @@ npm audit fix
 2. Tạo database và các bảng cần thiết trong file database.sql
    
 3. Test database connect bằng câu lệnh: node testDBconnect.js
+
 4. Chạy chương trình bằng câu lệnh: node app.js
