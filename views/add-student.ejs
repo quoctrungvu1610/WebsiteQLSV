@@ -1,0 +1,60 @@
+<%- include ('partials/header.ejs'); -%>
+    <div class="container frame">
+        <% if (message != '') { %>
+            <p class="text-center text-danger"><%= message %></p>
+        <% } %>
+        
+        <form class="add-student-form" action="" method="post" enctype="multipart/form-data">
+            <div>
+                <h1 class = "middle themeheader" style="font-family: 'Dosis', sans-serif; color: teal; margin-top: 0px;margin-bottom: 50px;">Thêm Sinh Viên</h1>
+            </div>
+            <div class="form-group ">
+                <div class="form-group col-md-6  middle">
+                    <input type="text" class="form-control" name="Name" id="Name" placeholder="Tên Sinh Viên" required>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <input type="text" class="form-control" name="Email" id="Email" placeholder="Email" required>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <input type="text" class="form-control" name="MSSV" id="MSSV" placeholder="Mã Số Sinh Viên" required>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <input type="text" class="form-control" name="Phone" id="Phone" placeholder="Số Điện Thoại" required>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <select id="Class" name="Class" class="form-control" required>
+                        <option selected disabled>Lớp</option>
+                        <option>15PFIEV1</option>
+                        <option>15PFIEV2</option>
+                        <option>15PFIEV3</option>
+                        <option>16PFIEV1</option>
+                        <option>16PFIEV2</option>
+                        <option>16PFIEV3</option>
+                        <option>17PFIEV1</option>
+                        <option>17PFIEV2</option>
+                        <option>17PFIEV3</option>
+                        <option>18PFIEV1</option>
+                        <option>18PFIEV2</option>
+                        <option>18PFIEV3</option>
+                        <option>19PFIEV1</option>
+                        <option>19PFIEV2</option>
+                        <option>19PFIEV3</option>
+                        <option>20PFIEV1</option>
+                        <option>20PFIEV2</option>
+                        <option>20PFIEV3</option>     
+                    </select>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <input type="text" class="form-control" name="DOB" id="DOB" placeholder="Ngày Tháng Năm Sinh" required>
+                </div>
+                <div class="col-md-6 middle">
+                    <label for="student-img"><b>Hình Ảnh Sinh Viên  </b></label>
+                    <input type="file" name="image" id="student-img" class="" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary col-md-6 middle " style = "background-color: teal;">Thêm Sinh Viên</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

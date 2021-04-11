@@ -1,0 +1,43 @@
+<%- include ('partials/header.ejs'); -%>
+    <div class="container frame">
+        <% if (message != '') { %>
+            <p class="text-center text-danger"><%= message %></p>
+        <% } %>
+        
+        <form class="add-student-form" action="" method="post" enctype="multipart/form-data">
+            <div>
+                <h1 class = "middle themeheader" style="font-family: 'Dosis', sans-serif; color: teal; margin-top: 0px;margin-bottom: 50px;">Thêm Bảng Điểm</h1>
+            </div>
+            <div class="form-group ">
+                <div class="form-group col-md-6  middle">
+                    <input type="text" class="form-control" name="FName" id="FName" placeholder="Tên Sinh Viên" required>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <input type="text" class="form-control" name="FMSSV" id="FMSSV" placeholder="Mã Số Sinh Viên" required>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <input type="text" class="form-control" name="Subject1" id="Subject1" placeholder="Điểm Môn Học 1" required>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <input type="text" class="form-control" name="Subject2" id="Subject2" placeholder="Điểm Môn Học 2" required>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <input type="text" class="form-control" name="Subject3" id="Subject3" placeholder="Điểm Môn Học 3" required>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <input type="text" class="form-control" name="Subject4" id="Subject4" placeholder="Điểm Môn Học 4" required>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <input type="text" class="form-control" name="Subject5" id="Subject5" placeholder="Điểm Môn Học 5" required>
+                </div>
+                <div class="col-md-6 middle">
+                    <label for="player-img"><b>Hình Ảnh Sinh Viên  </b></label>
+                    <input type="file" name="image" id="img" class="" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary col-md-6 middle " style = "background-color: teal;">Thêm Điểm</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

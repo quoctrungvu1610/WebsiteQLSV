@@ -1,0 +1,46 @@
+<%- include ('partials/header.ejs'); -%>
+<div class="table-wrapper">
+    <% if (mark.length > 0) { %>
+    <table class="table">
+        <thead class="thead-blue">
+            <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Name</th>
+                <th scope="col">MSSV</th>
+                <th scope="col">Subject1</th>
+                <th scope="col">Subject2</th>
+                <th scope="col">Subject3</th>
+                <th scope="col">Subject4</th>
+                <th scope="col">Subject5</th>
+                <th scope="col">Hình Ảnh</th>
+                <th scope="col">Chỉnh Sửa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% mark.forEach((student, index) => { %>
+                <tr>
+                    <th scope="row" style="color:#00CC99"><%= student.STT%></th>
+                    <td><%= student.FName %></td>
+                    <td><%= student.FMSSV %></td>
+                    <td style="color:#FF6666; font-weight:bold"><%= student.Subject1%></td>  
+                    <td style="color:#FF6666;font-weight:bold"><%= student.Subject2%></td>
+                    <td style="color:#FF6666;font-weight:bold"><%= student.Subject3%></td>
+                    <td style="color:#FF6666;font-weight:bold"><%= student.Subject4%></td>
+                    <td style="color:#FF6666;font-weight:bold"><%= student.Subject5%></td>
+                    <td><img src="/assets/img/<%= student.image %>" class="student-img" alt=""></td>
+                    <td>
+                        <a href="/edit-mark/<%= student.STT %>" target="_blank" rel="noopener" class="btn btn-sm editbtn" title = "Chỉnh Sửa Điểm"><span class="material-icons">edit</span></a>
+                        <a href="/delete-mark/<%= student.STT %>" target="_blank" class="btn btn-sm delbtn" title ="Xóa Thông Tin"><span class="material-icons">delete</span></a>
+                    </td>
+                    
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+    <% } else { %>
+        <p class="text-center">Hiện chưa có thông tin Điểm.Ấn vào <a href="/add-mark" >Đây</a> để thêm Điểm.</p>
+    <% } %>
+</div>
+</div>
+</body>
+</html> 

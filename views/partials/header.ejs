@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Quicksand:wght@300&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@1&display=swap" rel="stylesheet">     
+    <!--<link rel="stylesheet" href="/assets/css/custom.css">-->
+    <title><%= title %></title>
+</head>
+<style>
+    .table-wrapper {
+        margin-top: 50px;
+    }
+
+    .student-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .add-student-form {
+        margin-top: 50px;
+    }
+    .headerstyle{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: larger;
+    }
+    .middle{
+        display: inline-block;
+    }
+    .themeheader{
+        margin-top: 30px;
+        color: blue;
+        font-family:'Courier New', Courier, monospace
+    }
+    .frame{
+
+        height: 500px;
+        text-align:center;
+    }
+    .editbtn{
+        color:#00CCCC ;
+    }
+    .delbtn{
+        color:#FF6666 ;
+    }
+</style>
+<body>
+    <div class="page-wrapper">
+        <nav class="navbar navbar-light bg-light justify-content-center">
+            <a class="navbar-brand" title="Về trang chủ" href="/home">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Logo_dhbkdn.jpg" style="width:50px;">
+            </a>
+            <span class="navbar-brand mb-0 h1 headerstyle" style="font-family: 'Ropa Sans', sans-serif; color:#00CCCC ;font-size:30px"> Trang Quản Lí Sinh Viên</a></span>
+            <div>
+                <form class="navbar navbar-light bg-light justify-content-center" action="/home" method="get">
+                    <input class="justify-content-center" type="text" name="search" id="search">
+                    <br>
+                    <input class="btn" style="color: #00CCCC;font-weight: bold;" type="submit" value="Tìm Kiếm">
+                </form>
+            </div>
+            <a style = "text-decoration: none ; font-weight: bold;" class="navbar navbar-light bg-light justify-content-center" href="/home" title="Trang Chủ">Trang Chủ</a>
+            <a style = "text-decoration: none ; font-weight: bold" class="navbar navbar-light bg-light justify-content-center" href="/add" title="Thêm Sinh Viên">Thêm sinh viên</a>
+            <a style = "text-decoration: none ; font-weight: bold" class="navbar navbar-light bg-light justify-content-center" href="/home-mark" title="Xem Bảng Điểm">Bảng Điểm</a>
+            <a style = "text-decoration: none ; font-weight: bold" class="navbar navbar-light bg-light justify-content-center" href="/add-mark" title="Thêm Bảng Điểm">Thêm Bảng Điểm</a>
+            <a style="color: #00CCCC;" class='navbar navbar-light bg-light justify-content-center text-decoration: none logout' href='/' title = 'Đăng Xuất'><span class="material-icons">logout</span></a>
+            
+    </nav>

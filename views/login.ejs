@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@1,300&family=News+Cycle&family=Ropa+Sans:ital@1&display=swap" rel="stylesheet">
+		<title>Đăng Nhập</title>
+		<style>
+		.login-form {
+			width: 300px;
+			margin: 0 auto;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+		.login-form h1 {
+			text-align: center;
+			color: #535b63;
+			font-size: 50px;
+			padding: 20px 0 0 0;
+			font-family: 'Fira Sans Extra Condensed', sans-serif;
+		}
+		.login-form input[type="password"],
+		.login-form input[type="text"] {
+			width: 100%;
+			padding: 15px;
+			border: 1px solid #dddddd;
+			margin-bottom: 15px;
+			box-sizing:border-box;
+		}
+		.login-form input[type="submit"] {
+			width: 100%;
+			padding: 15px;
+			background-color: #535b63;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+		.logo{
+			width: 80px;
+			height: 80px;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<div style="text-align:center">
+		<div style=" margin-top:150px;display: inline-block;width:400px;height:600px;background-color: #EEE9E9; border-radius: 10px;">
+		<div class="login-form">
+			<h1>Đăng Nhập</h1>
+			<div style="text-align: center;">
+				<img style='width:100px;height: 100px; margin:0 auto'  class = "logo" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Logo_dhbkdn.jpg">
+			</div>
+			<br>
+
+			
+			<form action="auth" method="POST">
+				<input type="text" name="username" placeholder="Tên Đăng Nhập" required>
+				<input type="password" name="password" placeholder="Mật Khẩu" required>
+				<input type="submit">	
+			</form>
+			<br><br><br><br><br>
+			<footer>
+				<p class="text-center text-muted" style="font-size: 12px;">Vũ Quốc Trung - 17PFIEV2</p>
+			</footer>
+		</div>
+		</div>
+		</div>
+	</body>
+</html>

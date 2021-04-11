@@ -1,0 +1,50 @@
+<%- include ('partials/header.ejs'); -%>
+<div class="container">
+    
+    <% if (message) { %>
+        <p class="text-center text-danger"><%= message %></p>
+    <% } %>
+
+    <% if (student) { %>
+        
+       
+        <form class="add-student-form " action="" method="post" enctype="multipart/form-data">
+            <div class = "frame">
+            <div>
+                <h1 class = "middle themeheader" style=" font-family: 'Dosis', sans-serif; color: teal; margin-top: 0px;margin-bottom: 50px;">Chỉnh Sửa Bảng Điểm</h1>
+            </div>
+            <div class="form-group ">
+                <div class="form-group col-md-6 middle ">
+                    <input type="text" class="form-control" name="FName" id="FName" placeholder="Họ và Tên" required>
+                </div>
+                <div class="form-group col-md-6 middle ">
+                    <input type="text" class="form-control" name="FMSSV" id="FMSSV" placeholder="Mã Số Sinh Viên" required>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <input type="text" class="form-control" name="Subject1" id="Subject1" placeholder="Điểm Môn Học 1" required>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <input type="text" class="form-control" name="Subject2" id="Subject2" placeholder="Điểm Môn Học 2" required>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <input type="text" class="form-control" name="Subject3" id="Subject3" placeholder="Điểm Môn Học 3" required>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <input type="text" class="form-control" name="Subject4" id="Subject4" placeholder="Điểm Môn Học 4" required>
+                </div>
+                <div class="form-group col-md-6 middle">
+                    <input type="text" class="form-control" name="Subject5" id="Subject5" placeholder="Điểm Môn Học 5" required>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn col-md-6 middle" style ="background-color: cadetblue; color:white;">Cập Nhật</button>
+        </form>
+    <% } else { %>
+        <p class="text-center">Chưa có Điểm sinh viên. Ấn vào <a href="/student/add-mark">Đây</a> để thêm Điểm sinh viên.</p>
+    <% } %>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
